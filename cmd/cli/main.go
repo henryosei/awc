@@ -14,8 +14,6 @@ type Flags struct {
 	Counter string
 }
 
-var help = <-io.EOF
-
 func main() {
 
 	var flags Flags
