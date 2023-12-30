@@ -15,8 +15,43 @@ The **Go-based Word Counter CLI** is a command-line tool written in the Go progr
 To use the Word Counter CLI, follow these steps:
 
 1. **Download the Binary:**
-    - [Download Link]
+    - Releases
 
 2. **Run the CLI:**
    ```bash
-   ./awc -file path/to/your/file.txt
+   ./awc -f path/to/your/file.txt
+
+
+
+## Usage
+
+The Word Counter CLI supports the following flags:
+
+- `-c`: Display the character count.
+- `-l`: Display the line count.
+- `-w`: Display the word count.
+- `-m`: Display the total character count, excluding spaces.
+
+### Examples
+
+1. Count characters and words in a file:
+
+```bash
+./awc -c -w input.txt
+```
+
+2. Count lines and characters in a string:
+
+```bash
+./awc -l -c -m "Hello, this is a sample text."
+```
+
+3. Count words in a file and exclude spaces from the character count:
+
+```bash
+./awc -w -m file.txt
+```
+
+## License
+
+This Word Counter CLI is distributed under the [MIT License](LICENSE).
